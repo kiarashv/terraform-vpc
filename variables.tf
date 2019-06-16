@@ -3,10 +3,21 @@ variable "region" {
   default = "us-east-1"
 }
 
-variable "a-z" {
-  type = "map"
+variable "access_key" {}
+variable "secret_key" {}
+
+variable "zone-a" {
+    description = "Availability Zone A"
 }
 
+variable "zone-b" {
+    description = "Availability Zone B"
+}
+
+variable "zone-c" {
+    description = "Availability Zone C"
+}
+  
 
 # Add vpc cidr range variable
 variable "vpc_cidr" {
